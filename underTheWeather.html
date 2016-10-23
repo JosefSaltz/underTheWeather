@@ -1,24 +1,42 @@
 <!DOCTYPE html>
 <html>
-  <head>
+
+<head>
     <title>UnderWeather</title>
     <meta charset="utf-8">
     <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet" type="text/css" />
     <link href="./styles/weather-icons.min.css" rel="stylesheet" type="text/css" />
-    <link href ="./styles/main.css" rel="stylesheet" type ="text/css" />
-  </head>
-  <body>
+    <link href="./styles/main.css" rel="stylesheet" type="text/css" />
+</head>
+
+<body>
+    <nav class="navbar navbar-default navbar-fixed-top">
+        <div class="container-fluid">
+            <div class="navbar-header">
+                <a href='../index.html' class='navbar-brand' style="font-size: 24px;">JS | JS</a>
+
+            </div>
+            <ul class='nav navbar-nav navbar-right collapse navbar-collapse'>
+                <li><a href='../index.html'>Home</a></li>
+                <li><a href='../aboutme.html'>About Me</a></li>
+                <li><a href='../blog.html'>Blog</a></li>
+                <li><a href='../aboutme.html#contact'>Contact</a></li>
+            </ul>
+        </div>
+    </nav>
     <div class="content">
-      <h1 id="bigHeader">Local Weather for </h1>
-      <i class="wi-wu-chanceflurries"></i>
-      <div class="weatherContent"></div>
-      <label class="switch">
+        <h1 id="bigHeader">Local Weather for </h1>
+        <i></i>
+        <div class="weatherContent"></div>
+        <label class="switch">
         <input class="switch-input" type="checkbox" />
         <span class="switch-label" data-on="°C" data-off="°F"></span>
         <span class="switch-handle"></span>
       </label>
     </div>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
     <script src="js/script.js"></script>
-  </body>
+</body>
+
 </html>

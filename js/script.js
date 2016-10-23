@@ -14,7 +14,7 @@ $(document).ready(function() {
           $(".weatherContent").append("<span id='faren'>" + resp.current_observation.temp_f + "°F</span>");
           $(".weatherContent").append("<span id='celsi'>" + resp.current_observation.temp_c + "°C</span>");
           var icons = resp.current_observation.icon;
-          //$("i").addClass(wuMap[icons]);
+          $("i").addClass(wuMap[icons]);
         }
       })
     })
@@ -32,23 +32,23 @@ $(document).ready(function() {
 });
 
 var wuMap = {
-  chanceflurries:"wi-wu-chanceflurries snow-wind",
-  chancerain:"wi-wu-chancerain rain",
-  chancesleat:"wi-wu-chancesleat sleet",
-  chancesnow:"wi-wu-chancesnow snow",
-  chancetstorms:"wi-wu-chancetstorms thunderstorm",
-  clear:"wi-wu-clear day-sunny",
-  cloudy:"wi-wu-cloudy day-cloudy",
-  flurries:"wi-wu-flurries snow-wind",
-  hazy:"wi-wu-hazy day-haze",
-  mostlycloudy:"wi-wu-mostlycloudy day-cloudy",
-  mostlysunny:"wi-wu-mostlysunny day-sunny",
-  partlycloudy:"wi-wu-partlycloudy day-cloudy",
-  partlysunny:"wi-wu-partlysunny day-sunny",
-  rain:"wi-wu-rain showers",
-  sleat:"wi-wu-sleat sleet",
-  snow:"wi-wu-snow snow",
-  sunny:"wi-wu-sunny day-sunny",
-  tstorms:"wi-wu-tstorms thunderstorm",
-  unknown:"wi-wu-unknown day-sunny"
+  chanceflurries:"wi wi-day-snow-wind",
+  chancerain:"wi wi-day-rain",
+  chancesleat:"wi wi-day-sleet",
+  chancesnow:"wi wi-day-snow-wind",
+  chancetstorms:"wi wi-day-thunderstorm",
+  clear:"wi wi-day-sunny",
+  cloudy:"wi wi-day-cloudy",
+  flurries:"wi wi-day-snow-wind",
+  hazy:"wi wi-day-haze",
+  mostlycloudy:"wi wi-day-cloudy",
+  mostlysunny:"wi wi-day-sunny",
+  partlycloudy:"wi wi-day-cloudy",
+  partlysunny:"wi wi-day-sunny",
+  rain:"wi wi-day-rain",
+  sleat:"wi wi-day-sleet",
+  snow:"wi wi-day-snow-wind",
+  sunny:"wi wi-day-sunny",
+  tstorms:"wi wi-day-thunderstorm",
+  unknown:"wi wi-day-sunny"
 }
